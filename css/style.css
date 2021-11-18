@@ -30,6 +30,22 @@ a:hover{
     color:rgb(255, 60, 86);
 }
 
+.button {
+    border-radius: 4px;
+    background-color: #001e3e;
+    color: white;
+  }
+
+  .quote {
+      font-style: italic;
+      font-family: "Dancing Script";
+  }
+
+  .quote-author {
+      text-align: right;
+      font-size: 0.8rem;
+  }
+
 /******************************************************************/
 /* Header Section */
 /******************************************************************/
@@ -58,6 +74,11 @@ header {
 #nav-left img {
     height: 90px;
     margin-left: 10px;
+}
+
+#nav-left a{
+    font-size: 26px;
+    font-weight: bold;
 }
 
 #nav-right {
@@ -101,23 +122,227 @@ main {
 /******************************************************************/
 /* Order section */
 /******************************************************************/
+#order-section{
+    margin: 0 auto;
 
-/******************************************************************/
-/* Subscribe section */
-/******************************************************************/
+    color: white;
+
+    height: 600px;
+    max-width: 1200px;
+    
+    background-image: url("../img/banner.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+#order-section-box {
+    padding: 0 30px 30px 30px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: rgb(255, 60, 86);
+  }
+
+
+#order-section-box .button {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 30px;
+}
 
 /******************************************************************/
 /* Mission section */
 /******************************************************************/
+#mission-section {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1200px;
+}
 
+.left {
+    text-align: left;
+    /* width: 80%; */
+}
+
+.right {
+    text-align: right;
+    /* width: 80%; */
+}
+
+#mission-section p {
+    text-align: justify;
+}
 /******************************************************************/
-/* Services section */
+/* Prestations section */
 /******************************************************************/
+#prestations-section {   
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#prestations-section-intro {
+    margin-top: 50px;
+}
+
+#prestations-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.prestation-sample {
+    background-color: white;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.prestation-desc{
+    height: 350px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prestation-desc p{
+    visibility: hidden;
+}
+
+.prestation-desc:hover > p{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#lit{
+    background-image: url("../img/lit.jpg");
+}
 
 /******************************************************************/
 /* Chibreurs section */
 /******************************************************************/
+#chibreurs-section {   
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+#chibreurs-section-intro {
+    margin-top: 50px;
+}
+
+#chibreurs-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.chibreur-sample {
+    background-color: white;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.chibreur-quote{
+    height: 350px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chibreur-quote p{
+    visibility: hidden;
+}
+
+.chibreur-quote:hover{
+    opacity: 0.3;
+}
+
+.chibreur-quote:hover > p{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#Jeff {
+    background-image: url('../img/Jeff.jpg');
+    background-position: top;
+}
+
+#Pop {
+    background-image: url('../img/pop.jpg');
+}
+
+#Francis {
+    background-image: url('../img/Francis.jpg');
+}
+
+#Totof {
+    background-image: url('../img/Totof.jpg');
+}
+
+#Sam {
+    background-image: url('../img/Samuel.jpg');
+}
+
+#Raph {
+    background-image: url('../img/Raph.jpg');
+}
+
+/******************************************************************/
+/* Quotes section */
+/******************************************************************/
+#quotes-section {   
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.quotes-samples {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .quote-sample{
+    width: 550px;
+}
 /******************************************************************/
 /* Footer section */
 /******************************************************************/
+footer {
+    padding: 30px;
+    font-size: 0.6rem;
+    position: relative;
+    top: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer .copyright{
+    float: left;
+}
+
+footer .location{
+    float: right;
+} */
