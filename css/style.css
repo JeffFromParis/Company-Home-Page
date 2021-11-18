@@ -1,10 +1,12 @@
 html {
     font-family: "Lato", sans-serif;
-    font-size: 16px;
+    font-size: 22px;
+    color: #001e3e;
+    background-color: #f3f3f3;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f3f3f3;
+    text-align: center;
 }
 
 body {
@@ -17,23 +19,83 @@ main {
     top: 200px; /* To offset for fixed header. */
   }
 
+a {
+    color: #001e3e;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+a:hover{
+    color:rgb(255, 60, 86);
+}
 
 /******************************************************************/
 /* Header Section */
 /******************************************************************/
 
 header {
-    position: fixed;
-    z-index: 1;
-    height: 100px;
-    width: 100%;
-    border-bottom: solid 1px darkblue;
+    border-bottom: 1px solid darkblue;
     background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+#nav-left {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#nav-left img {
+    height: 90px;
+    margin-left: 10px;
+}
+
+#nav-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+header .mobile {
+    display: none;
+  }
 
 header h1{
     font-size: 2rem;
     font-weight: bold;
+}
+
+/* Smartphones */
+@media only screen and (max-width: 490px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+}
+
+
+/******************************************************************/
+/* Main section */
+/******************************************************************/
+main {
+    position: relative;
+    top: 101px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 /******************************************************************/
