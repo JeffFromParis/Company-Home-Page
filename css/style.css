@@ -200,9 +200,7 @@ main {
 .prestation-sample {
     background-color: white;
     margin-bottom: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .prestation-desc{
@@ -223,11 +221,26 @@ main {
 
 .prestation-desc:hover > p{
     visibility: visible;
-    opacity: 1;
 }
 
 
-#lit{
+#classique{
+    background-image: url("../img/lit.jpg");
+}
+
+#premium{
+    background-image: url("../img/lit.jpg");
+}
+
+#express{
+    background-image: url("../img/lit.jpg");
+}
+
+#green{
+    background-image: url("../img/lit.jpg");
+}
+
+#double{
     background-image: url("../img/lit.jpg");
 }
 
@@ -274,12 +287,12 @@ main {
 }
 
 .chibreur-quote:hover{
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 
 .chibreur-quote:hover > p{
     visibility: visible;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 
