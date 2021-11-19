@@ -38,6 +38,7 @@ a:hover{
 
   .quote {
       font-style: italic;
+      text-align: justify;
       font-family: "Dancing Script";
   }
 
@@ -45,6 +46,21 @@ a:hover{
       text-align: right;
       font-size: 0.8rem;
   }
+
+  .transbox {
+      background-color:white;
+      height: 100%;
+      text-align: justify;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+  }
+
+  .transbox p{
+    /* font-weight: bold; */
+    padding: 0 10px;
+}
 
 /******************************************************************/
 /* Header Section */
@@ -138,8 +154,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 }
 
 #order-section-box {
@@ -215,11 +229,11 @@ main {
     justify-content: center;
 }
 
-.prestation-desc p{
+.prestation-desc .transbox{
     visibility: hidden;
 }
 
-.prestation-desc:hover > p{
+.prestation-desc:hover > .transbox{
     visibility: visible;
 }
 
@@ -229,19 +243,19 @@ main {
 }
 
 #premium{
-    background-image: url("../img/lit.jpg");
+    background-image: url("../img/champagne.jpg");
 }
 
 #express{
-    background-image: url("../img/lit.jpg");
+    background-image: url("../img/toilettes.jpg");
 }
 
 #green{
-    background-image: url("../img/lit.jpg");
+    background-image: url("../img/green.jpg");
 }
 
 #double{
-    background-image: url("../img/lit.jpg");
+    background-image: url("../img/double.jpg");
 }
 
 /******************************************************************/
@@ -268,11 +282,12 @@ main {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 350px;
 }
 
 .chibreur-quote{
     height: 350px;
-    width: 350px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,18 +297,14 @@ main {
     justify-content: center;
 }
 
-.chibreur-quote p{
+.chibreur-quote .transbox{
     visibility: hidden;
 }
 
-.chibreur-quote:hover{
-    /* opacity: 0.3; */
+.chibreur-quote:hover > .transbox{
+    visibility: visible;
 }
 
-.chibreur-quote:hover > p{
-    visibility: visible;
-    /* opacity: 1; */
-}
 
 
 #Jeff {
@@ -325,7 +336,7 @@ main {
 /* Quotes section */
 /******************************************************************/
 #quotes-section {   
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 
 }
@@ -337,7 +348,8 @@ main {
 }
 
  .quote-sample{
-    width: 550px;
+    /* width: 550px; */
+    margin: 0 30px;
 }
 /******************************************************************/
 /* Footer section */
