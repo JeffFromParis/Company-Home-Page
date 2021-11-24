@@ -50,7 +50,8 @@ a:hover{
   .transbox {
       background-color:white;
       height: 100%;
-      text-align: justify;
+      width: 100%;
+      text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -348,8 +349,8 @@ main {
 }
 
  .quote-sample{
-    /* width: 550px; */
-    margin: 0 30px;
+    width: 600px;
+    margin: 0 50px;
 }
 /******************************************************************/
 /* Footer section */
@@ -363,11 +364,3 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-
-/* footer .copyright{
-    float: left;
-}
-
-footer .location{
-    float: right;
-} */
