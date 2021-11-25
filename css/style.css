@@ -106,7 +106,13 @@ header {
 
 header .mobile {
     display: none;
-  }
+    align-items: center;
+}
+
+/*dimensionning the icons for mbile view*/
+header .mobile a img{
+    height: 50px;
+}
 
 header h1{
     font-size: 2rem;
@@ -114,13 +120,14 @@ header h1{
 }
 
 /* Smartphones */
-@media only screen and (max-width: 490px) {
-    header .desktop {
+@media only screen and (max-width: 800px) {
+    header #nav-right {
       display: none;
     }
   
     header .mobile {
-      display: block;
+      display: flex;
+      justify-content: space-between;
       width: 100%;
     }
 }
@@ -181,14 +188,28 @@ main {
     max-width: 1200px;
 }
 
+#mission-section .quote-bloc{
+    margin: 0 50px;
+}
+
 .left {
     text-align: left;
+    margin-left: 50px;
     /* width: 80%; */
+}
+
+.left p {
+    margin-right: 50px;
 }
 
 .right {
     text-align: right;
+    margin-right: 50px;
     /* width: 80%; */
+}
+
+.right p {
+    margin-left: 50px;
 }
 
 #mission-section p {
@@ -333,6 +354,10 @@ main {
     background-image: url('../img/Raph.jpg');
 }
 
+#Loik {
+    background-image: url('../img/Loik.jpg');
+}
+
 /******************************************************************/
 /* Quotes section */
 /******************************************************************/
@@ -349,7 +374,7 @@ main {
 }
 
  .quote-sample{
-    width: 600px;
+    /* width: 600px; */
     margin: 0 50px;
 }
 /******************************************************************/
